@@ -1,0 +1,235 @@
+/* Helper classes
+   ========================= */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+.invisible {
+  visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after,
+.container:after {
+  clear: both;
+}
+.clearfix,
+.container {
+  *zoom: 1;
+}
+.img-responsive {
+  display: block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-right {
+  text-align: right !important;
+}
+/* -----  Var ----- */
+body {
+  color: #404040;
+  font-family: 'Open Sans', sans-serif;
+}
+@media (min-width: 768px) {
+  body {
+    padding-top: 90px;
+  }
+}
+.container {
+  position: relative;
+}
+/* -----  Header ----- */
+.header {
+  background: #fff;
+  border-bottom: 3px solid #f36245;
+}
+.header .header-contact {
+  top: 0;
+  right: 15px;
+  color: #fff;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  position: absolute;
+  padding: 1px 7px 1px 7px;
+  background-color: #333947;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+.header .header-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .header {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    position: fixed;
+  }
+  .header .header-contact {
+    font-size: 20px;
+  }
+}
+.topnav {
+  padding-top: 38px;
+}
+.topnav .navbar-brand {
+  width: 100px;
+  height: auto;
+  padding: 14px 0;
+  display: inline-block;
+}
+.topnav .navbar-nav > li > a {
+  color: #3d3d3d;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.topnav .navbar-nav > li > a:hover {
+  background: inherit;
+  border-color: #a8a8a8;
+}
+.topnav .navbar-toggle {
+  border-color: #ddd;
+  margin-top: 12px;
+}
+.topnav .navbar-toggle:hover,
+.topnav .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.topnav .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+@media (min-width: 768px) {
+  .topnav .navbar-brand {
+    width: auto;
+    height: auto;
+    margin-top: -38px;
+  }
+}
+/* -----  Global Nav ----- */
+.global-nav {
+  padding-top: 30px;
+  background: #2c2e38;
+}
+.global-nav .global-nav-inner {
+  padding-top: 30px;
+  background: url("../img/header-service.png") 0 0 no-repeat;
+}
+.global-nav .global-nav-box {
+  height: 280px;
+  margin: 0;
+  list-style: none;
+  padding: 0 0 30px 0;
+}
+.global-nav .global-nav-box .global-nav-title {
+  display: none;
+  color: #e96045;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.global-nav .global-nav-box a {
+  color: #fff;
+  text-decoration: none;
+}
+.global-nav .global-nav-box a:hover {
+  color: #e96045;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+}
+.global-nav .global-nav-box li {
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+.global-nav .global-nav-box li:first-child a {
+  font-size: 24px;
+  line-height: 30px;
+  position: relative;
+  text-transform: uppercase;
+  border-bottom: 1px dotted #fff;
+}
+.global-nav .global-nav-box li:first-child a:before {
+  top: 7px;
+  left: -20px;
+  width: 10px;
+  height: 22px;
+}
+@media (min-width: 768px) {
+  .global-nav {
+    background-size: cover;
+    background: url("../img/global_nav_bg.jpg") top center no-repeat;
+  }
+}
+@media (max-width: 480px) {
+  .global-nav .col-xs-6 {
+    width: 100%;
+    float: none;
+  }
+  .global-nav .global-nav-box {
+    height: auto;
+  }
+  .global-nav .global-nav-box .global-nav-title {
+    display: block;
+  }
+  .global-nav .global-nav-inner {
+    padding-top: 0;
+    background: none;
+  }
+}
