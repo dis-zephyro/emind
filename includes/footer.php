@@ -1,5 +1,7 @@
 <footer class="footer">
-    <div class="container"></div>
+    <div class="container">
+        <span class="go-top">&nbsp;</span>
+    </div>
 </footer>
 
 
