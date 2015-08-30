@@ -1,4 +1,4 @@
-<div class="advantage">
+<div class="landingItem advantage" id="land_2">
     <div class="container">
         <div class="row">
 

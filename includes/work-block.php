@@ -1,4 +1,4 @@
-<div class="work-block">
+<div class="landingItem work-block" id="land_3">
     <div class="work-top">
         <div class="container">
             <div class="work-text">

@@ -1,4 +1,4 @@
-<div class="service-block">
+<div class="landingItem service-block" id="land_4">
     <div class="container">
         <div class="service-item">
             <div class="service-icon">

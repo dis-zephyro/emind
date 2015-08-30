@@ -1,14 +1,14 @@
-<nav class="global-nav">
+<nav class="landingItem service-nav"  id="land_1">
     <div class="container">
-        <div class="global-nav-inner">
+        <div class="service-nav-inner">
             <div class="row">
                 <div class="col-xs-6 col-sm-4 col-md-3">
-                    <div class="global-nav-box">
-                        <div class="global-nav-title">Наши услуги</div>
+                    <div class="service-nav-box">
+                        <div class="service-nav-title">Наши услуги</div>
                     </div>
                 </div>
                 <div class="col-xs-6  col-sm-4 col-md-3">
-                    <ul class="global-nav-box">
+                    <ul class="service-nav-box">
                         <li><a href="#">Дизайн</a></li>
                         <li><a href="#">Дизайн сайтов</a></li>
                         <li><a href="#">Фирменный стиль</a></li>
@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="col-xs-6 col-sm-4 col-md-3">
-                    <ul class="global-nav-box">
+                    <ul class="service-nav-box">
                         <li><a href="#">Аналитика</a></li>
                         <li><a href="#"></a></li>
                         <li><a href="#">СЕО аналитика</a></li>
@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="col-xs-6 col-sm-4 col-md-3">
-                    <ul class="global-nav-box">
+                    <ul class="service-nav-box">
                         <li><a href="#">Разработка</a></li>
                         <li><a href="#">Лендинг</a></li>
                         <li><a href="#">CRM</a></li>
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="col-xs-6 col-sm-4 col-md-3">
-                    <ul class="global-nav-box">
+                    <ul class="service-nav-box">
                         <li><a href="#">Отраслевые решения</a></li>
                         <li><a href="#">Создание сайта визитки</a></li>
                         <li><a href="#">Магазин</a></li>
@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="col-xs-6 col-sm-4 col-md-3">
-                    <ul class="global-nav-box">
+                    <ul class="service-nav-box">
                         <li><a href="#">Продвижение</a></li>
                         <li><a href="#">Интернет реклама + SEO</a></li>
                         <li><a href="#">Ведение контекстной рекламы</a></li>
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="col-xs-6 col-sm-4 col-md-3">
-                    <ul class="global-nav-box">
+                    <ul class="service-nav-box">
                         <li><a href="#">Наполнение</a></li>
                         <li><a href="#">Рерайтинг</a></li>
                         <li><a href="#">Копирайтинг</a></li>
@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="col-sx-6 col-sm-4 col-md-3">
-                    <ul class="global-nav-box">
+                    <ul class="service-nav-box">
                         <li><a href="#">Особые услуги</a></li>
                         <li><a href="#">Оформление страниц</a></li>
                         <li><a href="#">Менеджмент проектов</a></li>

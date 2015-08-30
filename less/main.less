@@ -10,7 +10,8 @@
 
 
 body {
-	color: #404040;
+	color: #303440;
+	background: #f4f4f4;
 	font-family: 'Open Sans', sans-serif;
 
 	@media (min-width: @min-sm) {
@@ -123,25 +124,25 @@ body {
 }
 
 
-/* -----  Global Nav ----- */
+/* -----  Service Nav ----- */
 
-.global-nav {
+.service-nav {
 	padding-top: 30px;
 	background: #2c2e38;
 
-	.global-nav-inner {
+	.service-nav-inner {
 		padding-top: 30px;
 		background: url("../img/header-service.png") 0 0 no-repeat;
 
 	}
 
-	.global-nav-box {
+	.service-nav-box {
 		height: 280px;
 		margin: 0;
 		list-style: none;
 		padding: 0 0 30px 0;
 
-		.global-nav-title {
+		.service-nav-title {
 			display: none;
 			color: #e96045;
 			font-size: 50px;
@@ -200,18 +201,119 @@ body {
 			float: none;
 		}
 
-		.global-nav-box {
+		.service-nav-box {
 			height: auto;
 
-			.global-nav-title {
+			.service-nav-title {
 				display: block;
 			}
 		}
 
-		.global-nav-inner {
+		.servicel-nav-inner {
 			padding-top: 0;
 			background: none;
 
+		}
+	}
+}
+
+
+/* -----  Side Nav ----- */
+
+.sidenav {
+	top: 40%;
+	right: 30px;
+	width: 54px;
+	z-index: 9000;
+	position: fixed;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		width: 54px;
+		height: 54px;
+		position: relative;
+		margin-bottom: 14px;
+
+		a {
+			width: 52px;
+			height: 52px;
+			color: #fff;
+			z-index: 9000;
+			display: inline-block;
+			border: 2px solid #ccc;
+			background: #343845 url("../img/icon_sidenav.png") no-repeat;
+			.border-radius(50%);
+			.transition(.2s);
+
+			&:hover {
+				.border-radius(0);
+			}
+
+			&.cur {
+				background-color: #eb5d40;
+			}
+		}
+
+		&.item1 {
+
+			a {
+				background-position: 0 0;
+			}
+		}
+
+		&.item2 {
+
+			a {
+				background-position: 0 -50px;
+			}
+		}
+
+		&.item3 {
+
+			a {
+				background-position: 0 -100px;
+			}
+		}
+
+		&.item4 {
+
+			a {
+				background-position: 0 -150px;
+			}
+		}
+
+		.sidenav-item-title {
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 52px;
+			z-index: 500;
+			display: block;
+			overflow: hidden;
+			text-align: right;
+			padding: 14px 0;
+			position: absolute;
+			line-height: 20px;
+			background: #343845;
+			text-transform: lowercase;
+			.border-radius(26px 0 0 26px);
+			.transition(.4s);
+		}
+
+		&:hover {
+			width: 174px;
+
+			.sidenav-item-title {
+				left: -120px;
+				width: 120px;
+				padding: 14px 10px;
+				border: 2px solid #40444f;
+			}
 		}
 	}
 }
@@ -516,6 +618,105 @@ body {
 	background: url("../img/footer_button.png") 0 0 no-repeat;
 	.border-radius(41px 41px 0 0);
 }
+
+
+/* -----  Portfolio ----- */
+
+.portfolio-header {
+	padding-top: 50px;
+	margin-bottom: 40px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #e96045;
+
+	.portfolio-target {
+		color: #485260;
+
+		.portfolio-target-title {
+			font-size: 46px;
+			font-weight: 600;
+			line-height: 60px;
+		}
+
+		.portfolio-target-text {
+			font-size: 14px;
+			font-weight: 700;
+			position: relative;
+			padding-left: 20px;
+
+			&:before {
+				top: 10px;
+				left: 0;
+				content: "—";
+				position: absolute;
+			}
+		}
+	}
+
+	.pag {
+		font-size: 0;
+		line-height: 0;
+		padding-top: 20px;
+		text-align: center;
+
+		a {
+			width: 42px;
+			height: 42px;
+			padding: 4px;
+			outline: none;
+			margin: 0 4px;
+			color: #485260;
+			font-size: 18px;
+			line-height: 30px;
+			text-align: center;
+			display: inline-block;
+			text-after-overflow: none;
+			border: 4px solid #485260;
+			.border-radius(50%);
+
+			&:hover {
+				color: @color-orange;
+				text-after-overflow: none;
+				border-color: @color-orange;
+			}
+		}
+
+	}
+
+	@media (min-width: @min-sm) {
+
+		.pag {
+			text-align: right;
+		}
+
+		.portfolio-target {
+			display: table;
+
+			.portfolio-target-title {
+				width: 140px;
+				font-size: 46px;
+				font-weight: 600;
+				line-height: 60px;
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			.portfolio-target-text {
+				padding-left: 0;
+				font-size: 14px;
+				font-weight: 700;
+				position: relative;
+				display: table-cell;
+				vertical-align: middle;
+
+				&:before {
+					left: -20px;
+				}
+			}
+		}
+	}
+
+}
+
 
 
 /* -----  Button ----- */

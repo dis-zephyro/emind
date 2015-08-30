@@ -4,18 +4,22 @@
         <?php include('includes/head.php'); ?>
     </head>
 
-    <body>
+    <body id="top">
         <!-- Header -->
         <?php include('includes/header.php'); ?>
         <!-- End of Header -->
 
-        <!-- Global Navigation -->
-        <?php include('includes/global-nav.php'); ?>
-        <!-- End of Global Navigation -->
+        <!-- SideNav -->
+        <?php include('includes/sidenav.php'); ?>
+        <!-- End of SideNav -->
 
-        <!-- Global Navigation -->
+        <!-- Service Navigation -->
+        <?php include('includes/service-nav.php'); ?>
+        <!-- End of Service Navigation -->
+
+        <!-- Advantage -->
         <?php include('includes/advantage.php'); ?>
-        <!-- End of Global Navigation -->
+        <!-- End of Advantage -->
 
         <!-- Work Block -->
         <?php include('includes/work-block.php'); ?>
@@ -26,9 +30,11 @@
         <!-- End of Service Block -->
 
 
-        <!-- Footer -->
-        <?php include('includes/footer.php'); ?>
-        <!-- End of Footer -->
+        <div class="container">
+            <a href="#top" class="go-top">&nbsp;</a>
+        </div>
+
+        <?php include('includes/script.php'); ?>
     </body>
 
 </html>
