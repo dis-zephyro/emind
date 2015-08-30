@@ -656,6 +656,47 @@ body {
     left: -20px;
   }
 }
+.portfolio-body .team {
+  padding-bottom: 35px;
+  border-bottom: 3px solid #e96045;
+}
+.portfolio-body .team .team-title {
+  color: #e96045;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+}
+.portfolio-body .team p {
+  font-size: 14px;
+  color: #485260;
+  line-height: 20px;
+  font-style: italic;
+}
+.portfolio-body .team p span {
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.portfolio-body .portfolio-descriptions {
+  padding-top: 30px;
+}
+.portfolio-body .portfolio-descriptions h1 {
+  color: #000;
+  font-size: 22px;
+}
+.portfolio-body .portfolio-descriptions p {
+  color: #303440;
+  font-size: 15px;
+  line-height: 27px;
+}
+@media (min-width: 768px) {
+  .portfolio-body .portfolio-descriptions h1 {
+    font-size: 30px;
+  }
+}
 /* -----  Button ----- */
 .btn {
   height: auto;
@@ -669,6 +710,10 @@ body {
     font-size: 22px;
     line-height: 30px;
   }
+}
+.btn:active {
+  top: 1px;
+  position: relative;
 }
 .btn-main {
   color: #fff;
@@ -697,6 +742,37 @@ body {
 .btn-main:hover:before {
   background-position: 0 -9px;
 }
+.btn-main:visited {
+  color: #fff;
+}
+.btn-orange {
+  color: #fff;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  background: #f36245;
+  border: 1px solid #f36245;
+}
+.btn-orange:before {
+  top: 50%;
+  right: 10px;
+  width: 23px;
+  height: 9px;
+  content: " ";
+  position: absolute;
+  margin-top: -2px;
+  background: url("../img/btn-arrow.png") 0 0 no-repeat;
+}
+.btn-orange:hover {
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.btn-orange:visited {
+  color: #fff;
+}
 /* ------------------------- */
 h1,
 h2,
@@ -705,6 +781,9 @@ h4 {
   margin: 0;
   padding: 0;
   font-weight: 400;
+}
+h1 {
+  margin-bottom: 25px;
 }
 /* ------------------------- */
 /*! Gray v1.4.2 (https://github.com/karlhorky/gray) | MIT */
