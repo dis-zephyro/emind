@@ -1,4 +1,4 @@
-<div class="sidenav">
+<div class="sidenav hidden-xs hidden-sm">
     <ul>
         <li class="item1">
             <a href="#land_1">

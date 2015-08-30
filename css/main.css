@@ -194,17 +194,17 @@ body {
   background: #2c2e38;
 }
 .service-nav .service-nav-inner {
-  padding-top: 30px;
-  background: url("../img/header-service.png") 0 0 no-repeat;
+  padding-top: 0;
+  background: none;
 }
 .service-nav .service-nav-box {
-  height: 280px;
   margin: 0;
+  height: auto;
   list-style: none;
   padding: 0 0 30px 0;
 }
 .service-nav .service-nav-box .service-nav-title {
-  display: none;
+  display: block;
   color: #e96045;
   font-size: 50px;
   font-weight: 300;
@@ -243,21 +243,21 @@ body {
     background-size: cover;
     background: url("../img/global_nav_bg.jpg") top center no-repeat;
   }
+  .service-nav .service-nav-inner {
+    padding-top: 30px;
+    background: url("../img/header-service.png") 0 0 no-repeat;
+  }
+  .service-nav .service-nav-box {
+    height: 280px;
+  }
+  .service-nav .service-nav-box .service-nav-title {
+    display: none;
+  }
 }
 @media (max-width: 480px) {
   .service-nav .col-xs-6 {
     width: 100%;
     float: none;
-  }
-  .service-nav .service-nav-box {
-    height: auto;
-  }
-  .service-nav .service-nav-box .service-nav-title {
-    display: block;
-  }
-  .service-nav .servicel-nav-inner {
-    padding-top: 0;
-    background: none;
   }
 }
 /* -----  Side Nav ----- */
@@ -267,6 +267,8 @@ body {
   width: 54px;
   z-index: 9000;
   position: fixed;
+  display: none;
+  visibility: hidden;
 }
 .sidenav ul {
   margin: 0;
@@ -345,6 +347,12 @@ body {
   width: 120px;
   padding: 14px 10px;
   border: 2px solid #40444f;
+}
+@media (min-width: 1040px) {
+  .sidenav {
+    display: block;
+    visibility: visible;
+  }
 }
 /* -----  Advantage ----- */
 .advantage {
