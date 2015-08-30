@@ -656,6 +656,9 @@ body {
     left: -20px;
   }
 }
+.portfolio-body {
+  margin-bottom: 80px;
+}
 .portfolio-body .team {
   padding-bottom: 35px;
   border-bottom: 3px solid #e96045;
@@ -689,12 +692,107 @@ body {
 }
 .portfolio-body .portfolio-descriptions p {
   color: #303440;
-  font-size: 15px;
-  line-height: 27px;
+  font-size: 14px;
+}
+.portfolio-body .portfolio-descriptions .btn {
+  margin-top: 40px;
+}
+.portfolio-body .portfolio-preview {
+  width: auto;
+  height: auto;
+  margin: 50px auto 0 auto;
+}
+.portfolio-body .portfolio-preview img {
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .portfolio-body .portfolio-descriptions h1 {
     font-size: 30px;
+  }
+  .portfolio-body .portfolio-preview {
+    width: 600px;
+    height: 535px;
+    padding: 27px 28px 0 28px;
+    background: url("../img/monitor.png") 0 0 no-repeat;
+  }
+}
+@media (min-width: 1040px) {
+  .portfolio-body .portfolio-descriptions p {
+    color: #303440;
+    font-size: 15px;
+    line-height: 27px;
+  }
+  .portfolio-body .portfolio-descriptions .portfolio-preview {
+    margin: 0 auto;
+  }
+}
+.portfolio-image img {
+  margin: 0 auto 30px auto;
+}
+.portfolio-project-link {
+  color: #a4a7ad;
+  display: block;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  vertical-align: middle;
+  border-left: 3px solid #e96045;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+.portfolio-project-link a {
+  color: #e96045;
+  padding-left: 18px;
+  text-decoration: none;
+}
+.portfolio-project-link a:hover {
+  color: #a4a7ad;
+}
+@media (min-width: 768px) {
+  .portfolio-project-link {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+.content {
+  margin-bottom: 40px;
+}
+/* -----  Content footet ----- */
+.content-footer {
+  color: #fff;
+  font-size: 22px;
+  padding: 20px 0;
+  font-weight: 300;
+  text-align: center;
+  position: relative;
+  background: #f36245;
+}
+.content-footer p {
+  margin-bottom: 0;
+}
+.content-footer .content-footer-up {
+  left: 50%;
+  top: -40px;
+  color: #fff;
+  width: 88px;
+  height: 88px;
+  font-size: 30px;
+  overflow: hidden;
+  padding-top: 5px;
+  margin-left: -44px;
+  position: absolute;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #f36245;
+}
+@media (min-width: 768px) {
+  .content-footer {
+    font-size: 36px;
   }
 }
 /* -----  Button ----- */

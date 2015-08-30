@@ -718,6 +718,7 @@ body {
 }
 
 .portfolio-body {
+	margin-bottom: 80px;
 
 	.team {
 		padding-bottom: 35px;
@@ -757,8 +758,21 @@ body {
 
 		p {
 			color: #303440;
-			font-size: 15px;
-			line-height: 27px;
+			font-size: 14px;
+		}
+
+		.btn {
+			margin-top: 40px;
+		}
+	}
+
+	.portfolio-preview {
+		width: auto;
+		height: auto;
+		margin: 50px auto 0 auto;
+
+		img {
+			margin: 0 auto;
 		}
 	}
 
@@ -771,10 +785,109 @@ body {
 			}
 		}
 
+		.portfolio-preview {
+			width: 600px;
+			height: 535px;
+			padding: 27px 28px 0 28px;
+			background: url("../img/monitor.png") 0 0 no-repeat;
+		}
+
+	}
+
+	@media (min-width: @min-md) {
+
+		.portfolio-descriptions {
+
+			p {
+				color: #303440;
+				font-size: 15px;
+				line-height: 27px;
+			}
+
+			.portfolio-preview {
+				margin: 0 auto;
+			}
+		}
+
 	}
 }
 
+.portfolio-image {
 
+	img {
+		margin: 0 auto 30px auto;
+	}
+}
+
+.portfolio-project-link {
+	color: #a4a7ad;
+	display: block;
+	font-size: 22px;
+	line-height: 30px;
+	margin-bottom: 50px;
+	text-decoration: none;
+	vertical-align: middle;
+	border-left: 3px solid #e96045;
+	.transition(all 0.2s ease 0s);
+
+
+	a {
+		color: #e96045;
+		padding-left: 18px;
+		text-decoration: none;
+
+		&:hover {
+			color: #a4a7ad;
+		}
+	}
+
+	@media (min-width: @min-sm) {
+		font-size: 36px;
+		line-height: 50px;
+	}
+}
+
+.content {
+	margin-bottom: 40px;
+}
+
+
+/* -----  Content footet ----- */
+
+.content-footer {
+	color: #fff;
+	font-size: 22px;
+	padding: 20px 0;
+	font-weight: 300;
+	text-align: center;
+	position: relative;
+	background: @color-orange;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.content-footer-up {
+		left: 50%;
+		top: -40px;
+		color: #fff;
+		width: 88px;
+		height: 88px;
+		font-size: 30px;
+		overflow: hidden;
+		padding-top: 5px;
+		margin-left: -44px;
+		position: absolute;
+		text-align: center;
+		.border-radius(50%);
+		background: @color-orange;
+	}
+
+
+	@media (min-width: @min-sm) {
+		font-size: 36px;
+	}
+}
 
 /* -----  Button ----- */
 

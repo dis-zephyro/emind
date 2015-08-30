@@ -29,7 +29,7 @@
                 </div>
                 <div class="portfolio-body">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <div class="team">
                                 <div class="team-title">РАЗРАБОТЧИКИ:</div>
                                 <p><span>Руководитель проекта:</span> Евгений</p>
@@ -42,15 +42,35 @@
                                 <a href="#" class="btn btn-orange">Отправить заказ</a>
                             </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-md-8">
                             <div class="portfolio-preview">
+                                <img class="img-responsive" src="images/portfolio01_1.jpg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="portfolio-image">
+                    <img class="img-responsive" src="images/portfolio01_2.jpg" alt="">
+                </div>
+                <div class="portfolio-project-link">
+                    <noindex>
+                        <a href="http://tatiana.legenya.ru" class="site" rel="nofollow" target="_blank">tatiana.legenya.ru</a>
+                    </noindex>
+                </div>
+                <div class="portfolio-text">
+                    <p>Итоговое решение по разработке сайта оказалось весьма удачным, необычное левое расположение меню и самого дизайна, позволило решить ряд проблем с предоставлением информации и дало ряд преимуществ.</p>
+                    <p>Сочетание работы дизайнера и стилиста позволило сделать сайт утонченным и запоминающимся.</p>
+                </div>
             </div>
         </section>
 
+        <div class="content-footer">
+            <a class="content-footer-up" href="#"><span class="glyphicon glyphicon-chevron-up"></span></a>
+            <div class="container">
+                <p>Требуется? Тогда звоните!</p>
+                <p>+7 (800) 775-82-03</p>
+            </div>
+        </div>
 
         <!-- Footer -->
         <?php include('includes/footer.php'); ?>
