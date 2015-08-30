@@ -124,6 +124,41 @@ body {
 }
 
 
+/* -----  Footer ----- */
+
+.footer {
+	padding: 30px 0;
+	background: #212531;
+
+	.copyright {
+		color: #638188;
+		padding-bottom: 25px;
+		text-align: center;
+	}
+
+	.footer-order {
+		text-align: center;
+	}
+
+	@media (min-width: @min-sm) {
+
+		.copyright {
+			padding: 25px 0;
+			float: left;
+			text-align: left;
+		}
+
+		.footer-order {
+			float: right;
+			text-align: right;
+			display: inline-block;
+		}
+	}
+
+
+}
+
+
 /* -----  Service Nav ----- */
 
 .service-nav {
@@ -661,7 +696,7 @@ body {
 		a {
 			width: 42px;
 			height: 42px;
-			padding: 4px;
+			padding: 2px;
 			outline: none;
 			margin: 0 4px;
 			color: #485260;
@@ -678,6 +713,8 @@ body {
 				text-after-overflow: none;
 				border-color: @color-orange;
 			}
+
+
 		}
 
 	}
@@ -847,12 +884,13 @@ body {
 	}
 }
 
-.content {
-	margin-bottom: 40px;
+.portfolio-text {
+	padding-bottom: 20px;
 }
 
-
-/* -----  Content footet ----- */
+.content {
+	margin-bottom: 50px;
+}
 
 .content-footer {
 	color: #fff;
@@ -889,7 +927,262 @@ body {
 	}
 }
 
-/* -----  Button ----- */
+
+/* -----  Contact ----- */
+
+.contact-page {
+	background: #212531;
+
+	.contact-map {
+		margin: 0;
+		list-style: none;
+		position: relative;
+		padding: 30px 0;
+
+		> li {
+			color: #fff;
+			font-size: 16px;
+		}
+
+		.address {
+			font-size: 14px;
+
+			ul {
+				color: #f5f5f5;
+				list-style: none;
+				padding: 4px 0 4px 35px;
+			}
+		}
+
+	}
+
+	.contact-form {
+
+		.form-control {
+
+			&:focus {
+				border-color: @color-orange;
+			}
+		}
+
+		textarea.form-control {
+			height: 217px;
+		}
+	}
+
+
+	@media (min-width: @min-md) {
+		height: 850px;
+		background: url("../img/maps.jpg") 50% -150px no-repeat;
+
+		.contact-map {
+			height: 420px;
+
+			> li {
+				position: absolute;
+
+				.city {
+					color: #656971;
+					font-size: 11px;
+					cursor: pointer;
+					padding-top: 30px;
+					position: relative;
+					display: inline-block;
+
+					&:before {
+						top: 0;
+						left: 0;
+						width: 26px;
+						height: 26px;
+						content: " ";
+						position: absolute;
+						border: 2px solid #585b60;
+						.border-radius(50%);
+					}
+
+					&:after {
+						top: 0;
+						left: 0;
+						width: 10px;
+						height: 10px;
+						margin: 8px;
+						content: " ";
+						position: absolute;
+						background: #ff9c00;
+						.border-radius(50%);
+					}
+
+					&:hover {
+
+						&:before {
+							border: 4px solid #1a1f2d;
+							.box-shadow(0px 0px 8px 0px rgba(255, 255, 255, 0.5));
+						}
+
+						&:after {
+							margin: 4px;
+							width: 18px;
+							height: 18px;
+						}
+					}
+				}
+
+				&.moscow {
+					top: 150px;
+					left: 190px;
+				}
+
+				&.habarovsk {
+					top: 275px;
+					right: 50px;
+
+					.address {
+						left: -215px;
+
+
+						ul {
+
+							&:before {
+								left: auto;
+								right: 45px;
+							}
+						}
+					}
+				}
+
+				&.bryansk {
+					top: 200px;
+					left: 150px;
+				}
+
+				&.sevastopol {
+					top: 300px;
+					left: 145px;
+				}
+
+				&.minsk {
+					top: 165px;
+					left: 100px;
+				}
+
+				&.uzgorod {
+					top: 210px;
+					left: 70px;
+				}
+
+				&:hover {
+
+					.address {
+						display: block;
+					}
+				}
+			}
+
+			.address {
+				left: -40px;
+				top: -75px;
+				width: 280px;
+				height: 75px;
+				display: none;
+				font-size: 14px;
+				position: absolute;
+				padding-bottom: 15px;
+
+				ul {
+					margin: 0;
+					padding: 10px;
+					color: #fff;
+					list-style: none;
+					position: relative;
+					background: url("../img/contact-address-bg.png");
+					border-radius: 6px;
+
+					&:before {
+						left: 45px;
+						bottom: -8px;
+						width: 15px;
+						height: 8px;
+						content: " ";
+						position: absolute;
+						background: url("../img/contact-address-arrow.png") 0 0 no-repeat;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* -----  Popup block ----- */
+
+.popup-box {
+	padding: 20px;
+	background: #fff;
+	max-width: 960px;
+
+	.form-title {
+		font-size: 22px;
+		color: #485260;
+		font-weight: 600;
+		margin: 0 0 30px 0;
+		text-align: center;
+	}
+
+	.btn-close {
+		top: 0;
+		right: 0;
+		color: #444;
+		width: 50px;
+		height: 50px;
+		padding: 5px 0;
+		cursor: pointer;
+		font-size: 18px;
+		line-height: 40px;
+		text-align: center;
+		position: absolute;
+		background: #cccccc;
+		.transition(.3s);
+
+		&:hover {
+			color: #fff;
+			background: @color-orange;
+		}
+	}
+
+	.address {
+		font-size: 20px;
+		line-height: 18px;
+		color: #222222;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.telephone {
+		font-size: 20px;
+		margin-bottom: 0;
+		line-height: 20px;
+	}
+
+	.btn {
+		margin-bottom: 30px;
+	}
+
+	@media (min-width: @min-sm) {
+		padding: 40px;
+		font-size: 16px;
+
+		.form-title {
+			font-size: 36px;
+		}
+
+		.btn {
+			margin-bottom: 0;
+		}
+	}
+
+}
+
+
+/* -----  Button & Form ----- */
 
 .btn {
 	height: auto;
@@ -911,6 +1204,7 @@ body {
 
 .btn-main {
 	color: #fff;
+	background-color: transparent;
 	border: 1px solid #555861;
 	.transition(.2s);
 
@@ -926,7 +1220,8 @@ body {
 	}
 
 
-	&:hover {
+	&:hover,
+	&:focus {
 		color: @color-orange;
 		.box-shadow(0px 0px 5px 0px rgba(255, 255, 255, 0.3));
 
@@ -935,11 +1230,26 @@ body {
 		}
 	}
 
-	&:visited {
-		color: #fff;
-	}
-}
+	&.invert {
+		color: @color-orange;
+		border-color: @color-orange;
 
+		&:before {
+			background-position: 0 -9px;
+		}
+
+		&:hover,
+		&:focus {
+			color: #fff;
+			border-color: #fff;
+
+			&:before {
+				background-position: 0 0;
+			}
+		}
+	}
+
+}
 
 .btn-orange {
 	color: #fff;
@@ -969,6 +1279,23 @@ body {
 }
 
 
+.form-group {
+	margin-bottom: 25px;
+}
+
+.form-control {
+	height: 56px;
+	font-size: 16px;
+	.border-radius(0);
+
+	&:focus {
+		border-color: #000;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 0, 0, 0.6);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 0, 0, 0.6);
+	}
+}
+
+
 /* ------------------------- */
 
 h1, h2, h3, h4 {
@@ -979,6 +1306,14 @@ h1, h2, h3, h4 {
 
 h1 {
 	margin-bottom: 25px;
+}
+
+h2 {
+	margin-bottom: 25px;
+}
+
+h3 {
+	margin-bottom: 15px;
 }
 
 /* ------------------------- */

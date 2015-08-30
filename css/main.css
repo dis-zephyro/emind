@@ -163,6 +163,31 @@ body {
     margin-top: -38px;
   }
 }
+/* -----  Footer ----- */
+.footer {
+  padding: 30px 0;
+  background: #212531;
+}
+.footer .copyright {
+  color: #638188;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.footer .footer-order {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer .copyright {
+    padding: 25px 0;
+    float: left;
+    text-align: left;
+  }
+  .footer .footer-order {
+    float: right;
+    text-align: right;
+    display: inline-block;
+  }
+}
 /* -----  Service Nav ----- */
 .service-nav {
   padding-top: 30px;
@@ -610,7 +635,7 @@ body {
 .portfolio-header .pag a {
   width: 42px;
   height: 42px;
-  padding: 4px;
+  padding: 2px;
   outline: none;
   margin: 0 4px;
   color: #485260;
@@ -757,10 +782,12 @@ body {
     line-height: 50px;
   }
 }
-.content {
-  margin-bottom: 40px;
+.portfolio-text {
+  padding-bottom: 20px;
 }
-/* -----  Content footet ----- */
+.content {
+  margin-bottom: 50px;
+}
 .content-footer {
   color: #fff;
   font-size: 22px;
@@ -795,7 +822,215 @@ body {
     font-size: 36px;
   }
 }
-/* -----  Button ----- */
+/* -----  Contact ----- */
+.contact-page {
+  background: #212531;
+}
+.contact-page .contact-map {
+  margin: 0;
+  list-style: none;
+  position: relative;
+  padding: 30px 0;
+}
+.contact-page .contact-map > li {
+  color: #fff;
+  font-size: 16px;
+}
+.contact-page .contact-map .address {
+  font-size: 14px;
+}
+.contact-page .contact-map .address ul {
+  color: #f5f5f5;
+  list-style: none;
+  padding: 4px 0 4px 35px;
+}
+.contact-page .contact-form .form-control:focus {
+  border-color: #f36245;
+}
+.contact-page .contact-form textarea.form-control {
+  height: 217px;
+}
+@media (min-width: 1040px) {
+  .contact-page {
+    height: 850px;
+    background: url("../img/maps.jpg") 50% -150px no-repeat;
+  }
+  .contact-page .contact-map {
+    height: 420px;
+  }
+  .contact-page .contact-map > li {
+    position: absolute;
+  }
+  .contact-page .contact-map > li .city {
+    color: #656971;
+    font-size: 11px;
+    cursor: pointer;
+    padding-top: 30px;
+    position: relative;
+    display: inline-block;
+  }
+  .contact-page .contact-map > li .city:before {
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    content: " ";
+    position: absolute;
+    border: 2px solid #585b60;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .contact-page .contact-map > li .city:after {
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    margin: 8px;
+    content: " ";
+    position: absolute;
+    background: #ff9c00;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .contact-page .contact-map > li .city:hover:before {
+    border: 4px solid #1a1f2d;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.5);
+  }
+  .contact-page .contact-map > li .city:hover:after {
+    margin: 4px;
+    width: 18px;
+    height: 18px;
+  }
+  .contact-page .contact-map > li.moscow {
+    top: 150px;
+    left: 190px;
+  }
+  .contact-page .contact-map > li.habarovsk {
+    top: 275px;
+    right: 50px;
+  }
+  .contact-page .contact-map > li.habarovsk .address {
+    left: -215px;
+  }
+  .contact-page .contact-map > li.habarovsk .address ul:before {
+    left: auto;
+    right: 45px;
+  }
+  .contact-page .contact-map > li.bryansk {
+    top: 200px;
+    left: 150px;
+  }
+  .contact-page .contact-map > li.sevastopol {
+    top: 300px;
+    left: 145px;
+  }
+  .contact-page .contact-map > li.minsk {
+    top: 165px;
+    left: 100px;
+  }
+  .contact-page .contact-map > li.uzgorod {
+    top: 210px;
+    left: 70px;
+  }
+  .contact-page .contact-map > li:hover .address {
+    display: block;
+  }
+  .contact-page .contact-map .address {
+    left: -40px;
+    top: -75px;
+    width: 280px;
+    height: 75px;
+    display: none;
+    font-size: 14px;
+    position: absolute;
+    padding-bottom: 15px;
+  }
+  .contact-page .contact-map .address ul {
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+    list-style: none;
+    position: relative;
+    background: url("../img/contact-address-bg.png");
+    border-radius: 6px;
+  }
+  .contact-page .contact-map .address ul:before {
+    left: 45px;
+    bottom: -8px;
+    width: 15px;
+    height: 8px;
+    content: " ";
+    position: absolute;
+    background: url("../img/contact-address-arrow.png") 0 0 no-repeat;
+  }
+}
+/* -----  Popup block ----- */
+.popup-box {
+  padding: 20px;
+  background: #fff;
+  max-width: 960px;
+}
+.popup-box .form-title {
+  font-size: 22px;
+  color: #485260;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+.popup-box .btn-close {
+  top: 0;
+  right: 0;
+  color: #444;
+  width: 50px;
+  height: 50px;
+  padding: 5px 0;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  background: #cccccc;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.popup-box .btn-close:hover {
+  color: #fff;
+  background: #f36245;
+}
+.popup-box .address {
+  font-size: 20px;
+  line-height: 18px;
+  color: #222222;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.popup-box .telephone {
+  font-size: 20px;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+.popup-box .btn {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .popup-box {
+    padding: 40px;
+    font-size: 16px;
+  }
+  .popup-box .form-title {
+    font-size: 36px;
+  }
+  .popup-box .btn {
+    margin-bottom: 0;
+  }
+}
+/* -----  Button & Form ----- */
 .btn {
   height: auto;
   font-size: 14px;
@@ -815,6 +1050,7 @@ body {
 }
 .btn-main {
   color: #fff;
+  background-color: transparent;
   border: 1px solid #555861;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -831,17 +1067,32 @@ body {
   margin-top: -2px;
   background: url("../img/btn-arrow.png") 0 0 no-repeat;
 }
-.btn-main:hover {
+.btn-main:hover,
+.btn-main:focus {
   color: #f36245;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
   -moz-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
 }
-.btn-main:hover:before {
+.btn-main:hover:before,
+.btn-main:focus:before {
   background-position: 0 -9px;
 }
-.btn-main:visited {
+.btn-main.invert {
+  color: #f36245;
+  border-color: #f36245;
+}
+.btn-main.invert:before {
+  background-position: 0 -9px;
+}
+.btn-main.invert:hover,
+.btn-main.invert:focus {
   color: #fff;
+  border-color: #fff;
+}
+.btn-main.invert:hover:before,
+.btn-main.invert:focus:before {
+  background-position: 0 0;
 }
 .btn-orange {
   color: #fff;
@@ -871,6 +1122,21 @@ body {
 .btn-orange:visited {
   color: #fff;
 }
+.form-group {
+  margin-bottom: 25px;
+}
+.form-control {
+  height: 56px;
+  font-size: 16px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.form-control:focus {
+  border-color: #000;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
+}
 /* ------------------------- */
 h1,
 h2,
@@ -882,6 +1148,12 @@ h4 {
 }
 h1 {
   margin-bottom: 25px;
+}
+h2 {
+  margin-bottom: 25px;
+}
+h3 {
+  margin-bottom: 15px;
 }
 /* ------------------------- */
 /*! Gray v1.4.2 (https://github.com/karlhorky/gray) | MIT */

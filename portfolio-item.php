@@ -21,8 +21,8 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="pag">
-                                <a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                <a href="#"><i class="fa fa-chevron-left"></i></a>
+                                <a href="#"><i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                             <div class="portfolio-descriptions">
                                 <h1>Разработка индивидуального сайта</h1>
                                 <p>Поставленная задача: разработка индивидуального сайта (лендинг) для стилиста. Сама по себе разработка авторских сайтов задача не простая, так как стилист видит стиль, и он очень точно чувствует цвета и любые огрехи. Работа была сложная, но интересная.</p>
-                                <a href="#" class="btn btn-orange">Отправить заказ</a>
+                                <a href="#order-box" class="btn btn-orange btn-popup">Отправить заказ</a>
                             </div>
                         </div>
                         <div class="col-md-8">
@@ -65,7 +65,7 @@
         </section>
 
         <div class="content-footer">
-            <a class="content-footer-up" href="#"><span class="glyphicon glyphicon-chevron-up"></span></a>
+            <a class="content-footer-up" href="#"><i class="fa fa-angle-up"></i></a>
             <div class="container">
                 <p>Требуется? Тогда звоните!</p>
                 <p>+7 (800) 775-82-03</p>

@@ -7,6 +7,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/main.css">
 
 <!--[if lt IE 9]>
