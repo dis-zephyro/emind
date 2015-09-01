@@ -43,8 +43,13 @@
                             </div>
                         </div>
                         <div class="col-md-8">
-                            <div class="portfolio-preview">
-                                <img class="img-responsive" src="images/portfolio01_1.jpg" alt="">
+                            <div class="portfolio-preview-inner clearfix">
+                                <div class="portfolio-preview">
+                                    <div class="portfolio-preview-source" data-type="slider-image-wrapper">
+                                        <img class="portfolio-preview-item" src="images/portfolio01_screen.jpg" alt="" data-type="slider-image">
+                                    </div>
+                                </div>
+                                <input type="range" class="slider-scroller" min="0" step="1" value="0" data-type="slider-scroller">
                             </div>
                         </div>
                     </div>
